@@ -110,11 +110,4 @@
         android:text="Voltar"
         android:onClick="buttonClick" />
 
-    <Button
-        android:id="@+id/btSair"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sair"
-        android:onClick="buttonClick" />
-
 </LinearLayout>
