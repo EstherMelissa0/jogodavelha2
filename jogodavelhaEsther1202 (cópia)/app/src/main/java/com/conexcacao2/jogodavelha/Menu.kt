@@ -26,6 +26,12 @@ class Menu : AppCompatActivity() {
             startActivity(intent)
         }
 
+         binding.btSair.setOnClickListener {
+
+            finishAffinity( )
+
+        }
+
 
     }
 }
