@@ -26,6 +26,7 @@ class Menu : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //Botão de Fechamento da atividade.
          binding.btSair.setOnClickListener {
 
             finishAffinity( )
