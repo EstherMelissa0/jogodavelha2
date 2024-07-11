@@ -33,6 +33,13 @@ class maquina : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
+
+        //Botão para voltar para tela Menu.
+           binding.btVoltar.setOnClickListener {
+            val intent = Intent(this, Menu::class.java)
+            startActivity(intent)
+
+        }
     }
 
     //Função que está conectada ao view
@@ -175,17 +182,7 @@ class maquina : AppCompatActivity() {
         //Retorna nulo
         return null
 
-        binding.btVoltar.setOnClickListener {
-            val intent = Intent(this, Menu::class.java)
-            startActivity(intent)
-
-        }
-
-        binding.btSair.setOnClickListener {
-
-            finish( )
-
-        }
+       
     }
 
 }
