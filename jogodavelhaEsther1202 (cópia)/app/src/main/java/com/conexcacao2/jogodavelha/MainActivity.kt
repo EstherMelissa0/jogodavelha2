@@ -34,6 +34,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
+        
+          //Botão de Volta a tela Menu.
+        binding.btVoltar.setOnClickListener {
+            val intent = Intent(this, Menu::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     //Função que está conectada ao view.
@@ -109,18 +116,8 @@ class MainActivity : AppCompatActivity() {
         //Retorna nulo
         return null
 
-        //Botão de Volta a tela Menu.
-        binding.btVoltar.setOnClickListener {
-            val intent = Intent(this, Menu::class.java)
-            startActivity(intent)
-            finish()
-        }
+       
 
-        //Botão de Fechamento da atividade.
-        binding.btSair.setOnClickListener {
-            finishAffinity( )
-
-        }
     }
 
 
